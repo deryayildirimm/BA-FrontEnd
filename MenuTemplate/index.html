@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="hStyles.css">
+    <style>
+        @font-face {
+            font-family: "Bitstream Vera Serif Bold";
+            src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+        }
+
+        body {
+            font-family: "Bitstream Vera Serif Bold", serif;
+        }
+
+        span {
+            font-weight: bolder;
+            font-style: oblique;
+            float: right;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        li {
+            line-height: 30px;
+            font-size: 1em;
+        }
+
+        li:hover {
+            background-color: rgba(211, 226, 234, 0.823);
+
+        }
+
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+
+        .menu-details {
+            max-width: 700px;
+            width: 100%;
+            padding: 25px 30px;
+            border-radius: 5px;
+            background-color: rgba(243, 236, 236, 0.23);
+            box-shadow: 0 5px 10px rgba(28, 27, 27, 0.15);
+        }
+
+        .items {
+
+            padding: 5px;
+            width: calc(100% / 2 - 5px);
+            /* 
+             width: calc(100% / 2 - 20px);20px burada margin degeri oluyor 
+            bu sekilde iki esıt dıv olusturuyoruz responsıve olarak*/
+        }
+
+        section {
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .menu {
+            text-align: center;
+
+        }
+
+        h1 {
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 3em;
+        }
+
+        /* images text */
+        .container {
+            position: relative;
+            text-align: center;
+            color: rgb(222, 205, 205);
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 4px;
+            right: 18px;
+            font-size: xx-small;
+        }
+
+        a {
+            color: #ffffffae;
+            text-decoration: none;
+        }
+
+        /* Centered text */
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .container:hover .centered {
+            font-size: 35px;
+            display: block;
+            background-color: rgba(11, 11, 11, 0.57);
+
+        }
+
+        /* flip the image*/
+        /*
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-box-back {
+            background-color: #0f0e0e;
+            color: white;
+            transform: rotateY(180deg);
+        }
+        */
+    </style>
+</head>
+
+<body>
+
+
+
+    <main>
+        <section>
+
+            <div class="menu">
+
+
+                <h1>Coffe Shop </h1>
+
+                <div class="menu-details" style="">
+                    <div class="menu-items">
+                        <div class="items">
+                            <div class="container">
+                                <img src="ımages/fresh-coffee.jpg" alt="Coffee" style="width:100%; height: 100%;">
+
+                                <div class="centered">COFFEE</div>
+                                <div class="bottom-right">
+                                    <a
+                                        href="https://www.freepik.com/free-ai-image/freshly-ground-coffee-beans-fill-cozy-shop-generated-by-ai_42574455.htm#query=coffee%20shop%20GRAM%20KAHVE&position=3&from_view=search&track=ais_ai_generated">Image
+                                        By vecstock</a>
+                                </div>
+                            </div>
+                            <!-- 
+                            <div class="flip-box">
+                                <div class="flip-box-inner">
+                                    <div class="flip-box-front">
+                                        <img src="ımages/fresh-coffee.jpg" alt="Paris" style="width:300px;height:200px">
+                                    </div>
+                                    <div class="flip-box-back">
+                                        <h2>Coffee</h2>
+                                        
+                                    </div>
+                                </div>
+                               
+                            </div>
+                             -->
+                        </div>
+                        <div class="items">
+
+                            <ul>
+                                <li>Americano <span>42.00</span></li>
+                                <li>Latte <span>48.00</span></li>
+                                <li>Filter Coffee <span>40.00</span></li>
+                                <li>Espresso <span>30.00</span></li>
+                                <li>Turkish Coffee<span>35.00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" menu-items">
+
+
+                        <div class="items">
+                            <div class="container">
+                                <img src="ımages/dessert.jpg" alt="dessert" style="width:100%;">
+
+                                <div class="centered">DESSERTS</div>
+                                <div class="bottom-right">
+                                    <a
+                                        href="https://www.freepik.com/free-ai-image/freshly-ground-coffee-beans-fill-cozy-shop-generated-by-ai_42574455.htm#query=coffee%20shop%20GRAM%20KAHVE&position=3&from_view=search&track=ais_ai_generated">Image
+                                        By vecstock</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <ul>
+                                <li>Belgian Chocolate Cake<span>68.00</span></li>
+                                <li>Mosaic Cake <span>41.00</span></li>
+                                <li>Brownie<span>41.00</span></li>
+                                <li>Cake(with lemon)<span>35.00</span></li>
+                                <li>Cheesecake<span>50.00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-items">
+                        <div class="items">
+                            <div class="container">
+                                <img src="ımages/freshly-spilled-coffee-beans-add-aroma-decoratively-generated-by-ai.jpg"
+                                    alt="snacks" style="width:100%;">
+
+                                <div class="centered">SNACKS</div>
+                                <div class="bottom-right">
+                                    <a
+                                        href="https://www.freepik.com/free-ai-image/freshly-ground-coffee-beans-fill-cozy-shop-generated-by-ai_42574455.htm#query=coffee%20shop%20GRAM%20KAHVE&position=3&from_view=search&track=ais_ai_generated">Image
+                                        By vecstock</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+
+
+                            <ul>
+                                <li>Croissant<span>29.00</span></li>
+                                <li>Fruit Oatmeal<span>57.00</span></li>
+                                <li>Granola<span>57.00</span></li>
+                                <li>Cookie<span>40.00</span></li>
+                                <li>Chicken Salad<span>95.00</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-items">
+                        <div class="items">
+                            <div class="container">
+                                <img src="ımages/freshly-ground-coffee-beans-fill-cozy-shop-generated-by-ai.jpg"
+                                    alt="coffee" style="width:100%;">
+
+                                <div class="centered">Bean Coffee</div>
+                                <div class="bottom-right">
+                                    <a
+                                        href="https://www.freepik.com/free-ai-image/freshly-ground-coffee-beans-fill-cozy-shop-generated-by-ai_42574455.htm#query=coffee%20shop%20GRAM%20KAHVE&position=3&from_view=search&track=ais_ai_generated">Image
+                                        By vecstock</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+
+                            <ul>
+                                <li>House Blend(250 g) <span>270.00</span></li>
+                                <li>Espresso Roast(250 g) <span>270.00</span></li>
+                                <li>Kenya(250 g)<span>270.00</span></li>
+                                <li>Colombia Nariño(250 g)<span>270.00</span></li>
+                                <li>Caffè Verona(250 g)<span>270.00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>
