@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.box {
+    padding: 10px 0;
+
+}
+
+header {
+    height: 15vh;
+    /*   background-color: #819490;  */
+    padding: 0 25px;
+    position: sticky;
+    z-index: 100;
+ 
+}
+footer {
+    text-align: center;
+    color: aliceblue;
+    margin: 0 10px;
+    font-size: medium;
+   
+}
+nav{
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 25px;
+    text-align: center;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: block;
+}
+
+/*
+span {
+    font-size: 1rem;
+}
+
+a {
+    font-size: 2em;
+ 
+    color: #2E2319;
+    text-decoration: none;
+}
+
+*/
+
+
+
+.image-overlay {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+   
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.image-overlay:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.menu{
+    margin: 5% 10%;
+    width: 80%;
+    height: auto;
+   
+}
+tr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 3%;
+}
+
+td{
+  /*
+    background-image: url(images/ante-samarzija-lsmu0rUhUOk-unsplash.jpg);
+    background-size: contain;
+    width: 400px;
+    height: 450px;
+    */
+    width: 350px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+td:hover{
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+td > img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+td > img:hover {
+    box-shadow: 0 4px 6px rgba(12, 12, 12, 0.1);
+    
+
+}
+
+
+td > h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+td  p {
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+td  span {
+    font-weight: bold;
+}
+.txt{
+    display: none;
+    opacity: 0;
+    top: 50%;
+    text-align: center;
+}
+
+td:hover .txt{
+   
+    text-align: center;
+    background-color: rgba(27, 25, 25, 0.5);
+    display: block;
+    color: #839294;
+    opacity: 1;
+
+}
