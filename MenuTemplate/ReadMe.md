@@ -43,5 +43,9 @@
 
 ---
 
-https://github.com/deryayildirimm/BilgeAdam-FrontEnd/assets/58232355/9cd7abef-a68d-4ab5-85e0-eb3d5d1d65e5
+https://github.com/deryayildirimm/BA-FrontEnd/assets/58232355/8bd93af0-5ab7-43d6-a548-8654afde2706
+
+
+
+
 
