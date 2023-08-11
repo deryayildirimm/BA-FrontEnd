@@ -4,18 +4,18 @@
 > for centering text
 
 ```css 
-       position: absolute;
-       top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 
 ```
 >or just use this codes for parent element
 
  ```css 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 ```
 
 ---
